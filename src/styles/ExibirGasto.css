@@ -1,0 +1,71 @@
+/* ExibirGastos.css */
+.exibir-gastos-container {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh; /* Faz com que a página ocupe toda a altura da tela */
+ }
+ 
+ .exibir-gastos-header {
+   background-color: #77d4e4;
+   color: white;
+   padding: 20px;
+   text-align: center;
+ }
+ 
+ .exibir-gastos-header h1 {
+   margin: 0;
+   font-size: 2.5rem;
+ }
+ 
+ .exibir-gastos-body {
+   flex: 1;
+   padding: 20px;
+   background-color: #f4f4f4;
+ }
+ 
+ .gastos-list {
+   background-color: white;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .gastos-list ul {
+   list-style: none;
+   padding: 0;
+ }
+ 
+ .gastos-list li {
+   margin-bottom: 15px;
+ }
+ 
+ .gastos-list p {
+   font-size: 1.2rem;
+ }
+ 
+ .exibir-gastos-footer {
+   background-color: #333;
+   color: white;
+   text-align: center;
+   padding: 10px;
+   font-size: 0.9rem;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+ }
+ 
+ .exibir-gastos-footer button {
+   padding: 10px 20px;
+   font-size: 1.2rem;
+   background-color: #59a7b4;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+ }
+ 
+ .exibir-gastos-footer button:hover {
+   background-color: #77d4e4;
+ }
+ 

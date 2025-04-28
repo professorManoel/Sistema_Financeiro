@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import '../styles/ExibirReceita.css';
 
 function ExibirReceitas() {
   const [receitas, setReceitas] = useState([]);
@@ -9,13 +10,35 @@ function ExibirReceitas() {
   }, []);
 
   return (
-    <div>
-      <h3>Receitas</h3>
-      <ul>
-        {receitas.map((receita, index) => (
-          <li key={index}>{`${receita.descricao}: R$ ${receita.valor} (${receita.categoria})`}</li>
-        ))}
-      </ul>
+    <div className="exibir-receitas-container">
+      {/* Título */}
+      <header className="exibir-receitas-header">
+        <h1>Exibir Receitas</h1>
+      </header>
+
+      {/* Corpo da página */}
+      <main className="exibir-receitas-body">
+        <section className="receitas-list">
+          {receitas.length > 0 ? (
+            <ul>
+              {receitas.map((receita, index) => (
+                <li key={index}>
+                  <p><strong>Descrição:</strong> {receita.descricao}</p>
+                  <p><strong>Valor:</strong> R$ {receita.valor}</p>
+                  <p><strong>Categoria:</strong> {receita.categoria}</p>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p>Nenhuma receita cadastrada.</p>
+          )}
+        </section>
+      </main>
+
+      {/* Rodapé */}
+      <footer className="exibir-receitas-footer">
+        <button onClick={() => window.location.href = '/'}>Ir para Home</button>
+      </footer>
     </div>
   );
 }
