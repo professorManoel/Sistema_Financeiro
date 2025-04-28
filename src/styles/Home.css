@@ -1,0 +1,27 @@
+/* Home.css */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+button:first-child {
+  background-color: #59a7b4;
+}
+
+button:last-child {
+  background-color: #77d4e4;
+}

@@ -1,0 +1,28 @@
+/* Cadastro.css */
+.container {
+  max-width: 600px;
+}
+
+h2 {
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  background-color: #77d4e4;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+input[type="password"] {
+  margin-bottom: 20px;
+}
+
+a {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+}

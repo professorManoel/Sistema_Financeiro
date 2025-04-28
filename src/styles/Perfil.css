@@ -1,0 +1,24 @@
+/* Perfil.css */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #77d4e4;
+}
+
+button:last-child {
+  background-color: #e74c3c;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
